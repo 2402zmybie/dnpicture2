@@ -13,7 +13,8 @@
 </script>
 
 <style>
-	/*每个页面公共css */
-	@import url("styles/iconfont.wxss");
-	@import url("styles/base.wxss");
+	/* 公共样式 */
+@import './styles/base.wxss';
+	/* 引入字体图标库 */
+@import './styles/iconfont.wxss';
 </style>
