@@ -1,5 +1,5 @@
 <template>
-	<scroll-view scroll-y class="recommend-container" @scrolltolower="handleScrolltolower">
+	<scroll-view scroll-y class="recommend-container" @scrolltolower="handleScrolltolower" v-if="recommends.length !== 0">
 		<view class="recommend-list">
 			<view class="recommend-wrap" v-for="item in recommends">
 				<image :src="item.thumb" mode="widthFix"></image>
