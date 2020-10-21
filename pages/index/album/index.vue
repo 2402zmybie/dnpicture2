@@ -80,7 +80,7 @@
 			goDetail(item) {
 				console.log(item.id)
 				uni.navigateTo({
-					url: `/pages/detail-album/index?id=${item.id}`,
+					url:`/pages/detail-album/index?id=${item.id}`,
 					success: res => {},
 					fail: (err) => {console.log(err)},
 					complete: () => {}
