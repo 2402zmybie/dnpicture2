@@ -20,6 +20,12 @@
             "path" : "pages/mine/mine",
             "style" : {}
         }
+        ,{
+            "path" : "pages/picture-category/picture-category",
+            "style" : {
+				"navigationBarTitleText":"图片分类"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
