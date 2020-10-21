@@ -8,7 +8,7 @@
 			</swiper-item>
 		</swiper>
 		<view class="album-list">
-			<view class="album-item" v-for="(item,index) in album" :key="item.id">
+			<view class="album-item" v-for="(item,index) in album" :key="item.id" @click="goDetail(item)">
 				<view class="album-item-left">
 					<image :src="item.cover" mode="aspectFill"></image>
 				</view>
@@ -76,6 +76,15 @@
 						title:"没有更多数据了"
 					})
 				}
+			},
+			goDetail(item) {
+				console.log(item.id)
+				uni.navigateTo({
+					url: `/pages/detail-album/index?id=${item.id}`,
+					success: res => {},
+					fail: (err) => {console.log(err)},
+					complete: () => {}
+				});
 			}
 		}
 	}

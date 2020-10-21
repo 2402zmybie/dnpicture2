@@ -26,6 +26,12 @@
 				"navigationBarTitleText":"图片分类"
 			}
         }
+        ,{
+            "path" : "pages/detail-album/index",
+            "style" : {
+            	"navigationBarTitleText":"专辑详情"
+            }
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
