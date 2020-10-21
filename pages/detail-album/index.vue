@@ -19,15 +19,21 @@
 		</view>
 		
 		<view class="album-img-list">
-			<view class="album-img-wrap" v-for="item in wallpaper" :key="item.id">
+			<view class="album-img-wrap" v-for="(item,index) in wallpaper" :key="item.id">
+				<go-detail :list="wallpaper" :index="index">
 					<image :src="item.thumb + item.rule.replace('$<Height>',360)" mode="widthFix"></image>
+				</go-detail>
 			</view>
 		</view>
 	</view>
 </template>
 
 <script>
+	import goDetail from '../../components/go-detail.vue'
 	export default {
+		components:{
+			goDetail
+		},
 		onLoad(options) {
 			console.log(options.id)
 			uni.setNavigationBarTitle({
