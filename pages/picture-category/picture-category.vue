@@ -13,7 +13,7 @@
 			</view>
 		</view>
 	</view>
-</template>
+</template>	
 
 <script>
 	import pictureIndex from './picture/index.vue'
